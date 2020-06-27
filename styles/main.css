@@ -12,3 +12,12 @@ body{
     max-width: 960px;
     margin: 0 auto;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header nav a {
+    display: inline;
+}
+
