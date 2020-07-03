@@ -286,8 +286,9 @@ footer {
 .work-here button {
   width: 250px;
   height: 56px;
-  margin: auto;
+  margin: auto 0;
   border-radius: 10px;
+  justify-self: end;
   background: #5a98d0;
   border: none;
 }
