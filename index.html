@@ -4,250 +4,322 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <a href=""><img src="./images/LOGO.png" alt="" /></a>
+      <a href="">
+        <svg
+          width="48"
+          height="32"
+          viewBox="0 0 48 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="16" cy="16" r="16" fill="#316099" />
+          <circle
+            cx="32"
+            cy="16"
+            r="15"
+            fill="white"
+            stroke="#316099"
+            stroke-width="2"
+          />
+          <path
+            d="M38.3 23L33.38 9H29.96L25.06 23H28.04L28.88 20.48H34.46L35.3 23H38.3ZM31.68 12.18L33.6 17.9H29.76L31.68 12.18Z"
+            fill="#316099"
+          />
+        </svg>
+      </a>
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
+          <li><a class="selected" href="">Home</a></li>
           <li><a href="">Espectaculo</a></li>
           <li><a href="">Deportes</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="banner">
-      <div class="wrapper">
-        <h1>Blog Afrianska</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maiores
-          et minus, distinctio itaque.
-        </p>
-      </div>
-    </section>
-
-    <main class="wrapper">
-      <section class="search">
-        <div class="search-bar">
-          <img src="./images/icon-share.png" alt="" />
-          <p>Search Article</p>
+    <main>
+      <section class="banner">
+        <div class="wrapper">
+          <h1>Blog Afrianska</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            maiores et minus, distinctio itaque.
+          </p>
         </div>
       </section>
 
-      <section id="pupular">
-        <h2>Popular</h2>
+      <div class="wrapper">
+        <section class="search">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar" />
+          </div>
+        </section>
 
-        <div class="highlight-article">
-          <div class="item-highlight">
-            <h3>Feugiat sodales at nullam tellus.</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-              posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="data">
-              <p class="author">Samantha Leuthex</p>
-              <span>May 5, 3min read</span>
-              <div class="icons">
-                <img src="./images/icon-save.png" />
-                <img src="./images/icon-share.png" />
+        <section class="pupular">
+          <h2>Popular</h2>
+
+          <div class="highlight-article">
+            <div class="item-highlight">
+              <div>
+                <h3>Feugiat sodales at nullam tellus.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Mi posuere nibh tempor fringilla porta pellentesque ipsum.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="data">
+                <div class="data-info">
+                  <p class="author">Samantha Leuthex</p>
+                  <span>May 5, 3min read</span>
+                </div>
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-share"></i>
               </div>
             </div>
             <figure>
               <img src="./images/img-post-1.png" />
             </figure>
           </div>
-        </div>
 
-        <div id="featured-articles">
-          <div class="featured-item">
-            <h3>Non quam tortor, proin eu egestas scelerisque.</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="data">
-              <p class="author">Samantha Leuthex</p>
-              <span>May 5, 3min read</span>
-              <div class="icons">
-                <img src="./images/icon-save.png" />
-                <img src="./images/icon-share.png" />
+          <div class="featured-articles">
+            <div class="featured-item">
+              <figure>
+                <img src="./images/img-post-2.png" />
+              </figure>
+              <h3>Non quam tortor, proin eu egestas scelerisque.</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="data">
+                <div class="data-info">
+                  <p class="author">Samantha Leuthex</p>
+                  <span>May 5, 3min read</span>
+                </div>
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-share"></i>
               </div>
             </div>
-            <figure>
-              <img src="./images/img-post-2.png" />
-            </figure>
-          </div>
 
-          <div class="featured-item">
-            <h3>Porta proin tellus sed pulvinar odio eu pulvinar</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="data">
-              <p class="author">Samantha Leuthex</p>
-              <span>May 5, 3min read</span>
-              <div class="icons">
-                <img src="./images/icon-save.png" />
-                <img src="./images/icon-share.png" />
+            <div class="featured-item">
+              <figure>
+                <img src="./images/img-post-3.png" />
+              </figure>
+              <h3>Porta proin tellus sed pulvinar odio eu pulvinar</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="data">
+                <div class="data-info">
+                  <p class="author">Samantha Leuthex</p>
+                  <span>May 5, 3min read</span>
+                </div>
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-share"></i>
               </div>
             </div>
-            <figure>
-              <img src="./images/img-post-3.png" />
-            </figure>
-          </div>
 
-          <div class="featured-item">
-            <h3>Amet amet sed pharetra risus sit eget interdum.</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="data">
-              <p class="author">Samantha Leuthex</p>
-              <span>May 5, 3min read</span>
-              <div class="icons">
-                <img src="./images/icon-save.png" />
-                <img src="./images/icon-share.png" />
+            <div class="featured-item">
+              <figure>
+                <img src="./images/img-post-3 (1).png" />
+              </figure>
+              <h3>Amet amet sed pharetra risus sit eget interdum.</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="data">
+                <div class="data-info">
+                  <p class="author">Samantha Leuthex</p>
+                  <span>May 5, 3min read</span>
+                </div>
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-share"></i>
               </div>
             </div>
-            <figure>
-              <img src="./images/img-post-3 (1).png" />
-            </figure>
           </div>
           <a class="more" href="">See all popular articles</a>
-        </div>
-      </section>
+        </section>
 
-      <hr />
+        <div class="line"></div>
 
-      <section id="all-articles">
-        <h2>All Articles</h2>
+        <section id="all-articles">
+          <h2>All Articles</h2>
 
-        <div class="item-article">
-          <figure>
-            <img src="./images/img-post-4.png" alt="" />
-          </figure>
-          <h3>
-            Massa eu in laoreet enim augue vulputate nunc.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus
-            quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
-          </p>
-          <div class="data">
-            <p class="author">Samantha Leuthex</p>
-            <span>May 5, 3min read</span>
-            <div class="icons">
-              <img src="./images/icon-save.png" />
-              <img src="./images/icon-share.png" />
+          <div class="article-item">
+            <figure>
+              <img src="./images/img-post-4.png" alt="" />
+            </figure>
+            <div class="article-info">
+              <div class="article-text">
+                <h3>
+                  Massa eu in laoreet enim augue vulputate nunc.
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati eaque nostrum nulla magni commodi totam? Eum ex
+                  nihil, sequi, officia, sunt incidunt minus consequatur
+                  voluptates sit dolorem voluptatem est labore!
+                </p>
+              </div>
+              <div class="data">
+                <div class="data-info">
+                  <p class="author">Samantha Leuthex</p>
+                  <span>May 5, 3min read</span>
+                </div>
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-share"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="item-article">
-          <figure>
-            <img src="./images/img-post-4.png" alt="" />
-          </figure>
-          <h3>
-            Massa eu in laoreet enim augue vulputate nunc.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus
-            quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
-          </p>
-          <div class="data">
-            <p class="author">Samantha Leuthex</p>
-            <span>May 5, 3min read</span>
-            <div class="icons">
-              <img src="./images/icon-save.png" />
-              <img src="./images/icon-share.png" />
+          <div class="article-item">
+            <figure>
+              <img src="./images/img-post-5.png" alt="" />
+            </figure>
+            <div class="article-info">
+              <div class="article-text">
+                <h3>
+                  Massa eu in laoreet enim augue vulputate nunc.
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati eaque nostrum nulla magni commodi totam? Eum ex
+                  nihil, sequi, officia, sunt incidunt minus consequatur
+                  voluptates sit dolorem voluptatem est labore!
+                </p>
+              </div>
+              <div class="data">
+                <div class="data-info">
+                  <p class="author">Samantha Leuthex</p>
+                  <span>May 5, 3min read</span>
+                </div>
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-share"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="item-article">
-          <figure>
-            <img src="./images/img-post-4.png" alt="" />
-          </figure>
-          <h3>
-            Massa eu in laoreet enim augue vulputate nunc.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus
-            quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
-          </p>
-          <div class="data">
-            <p class="author">Samantha Leuthex</p>
-            <span>May 5, 3min read</span>
-            <div class="icons">
-              <img src="./images/icon-save.png" />
-              <img src="./images/icon-share.png" />
+          <div class="article-item">
+            <figure>
+              <img src="./images/img-post-6.png" alt="" />
+            </figure>
+            <div class="article-info">
+              <div class="article-text">
+                <h3>
+                  Massa eu in laoreet enim augue vulputate nunc.
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati eaque nostrum nulla magni commodi totam? Eum ex
+                  nihil, sequi, officia, sunt incidunt minus consequatur
+                  voluptates sit dolorem voluptatem est labore!
+                </p>
+              </div>
+              <div class="data">
+                <div class="data-info">
+                  <p class="author">Samantha Leuthex</p>
+                  <span>May 5, 3min read</span>
+                </div>
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-share"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="item-article">
-          <figure>
-            <img src="./images/img-post-4.png" alt="" />
-          </figure>
-          <h3>
-            Massa eu in laoreet enim augue vulputate nunc.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus
-            quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
-          </p>
-          <div class="data">
-            <p class="author">Samantha Leuthex</p>
-            <span>May 5, 3min read</span>
-            <div class="icons">
-              <img src="./images/icon-save.png" />
-              <img src="./images/icon-share.png" />
+          <div class="article-item">
+            <figure>
+              <img src="./images/img-post-7.png" alt="" />
+            </figure>
+            <div class="article-info">
+              <div class="article-text">
+                <h3>
+                  Massa eu in laoreet enim augue vulputate nunc.
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati eaque nostrum nulla magni commodi totam? Eum ex
+                  nihil, sequi, officia, sunt incidunt minus consequatur
+                  voluptates sit dolorem voluptatem est labore!
+                </p>
+              </div>
+              <div class="data">
+                <div class="data-info">
+                  <p class="author">Samantha Leuthex</p>
+                  <span>May 5, 3min read</span>
+                </div>
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-share"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="item-article">
-          <figure>
-            <img src="./images/img-post-4.png" alt="" />
-          </figure>
-          <h3>
-            Massa eu in laoreet enim augue vulputate nunc.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus
-            quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
-          </p>
-          <div class="data">
-            <p class="author">Samantha Leuthex</p>
-            <span>May 5, 3min read</span>
-            <div class="icons">
-              <img src="./images/icon-save.png" />
-              <img src="./images/icon-share.png" />
+          <div class="article-item">
+            <figure>
+              <img src="./images/img-post-8.png" alt="" />
+            </figure>
+            <div class="article-info">
+              <div class="article-text">
+                <h3>
+                  Massa eu in laoreet enim augue vulputate nunc.
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati eaque nostrum nulla magni commodi totam? Eum ex
+                  nihil, sequi, officia, sunt incidunt minus consequatur
+                  voluptates sit dolorem voluptatem est labore!
+                </p>
+              </div>
+              <div class="data">
+                <div class="data-info">
+                  <p class="author">Samantha Leuthex</p>
+                  <span>May 5, 3min read</span>
+                </div>
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-share"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="pagination">
-          <a href=""> <img src="./images/arrow-left.png" />Old Post</a>
-          <a href="">New Post<img src="./images/arrow-right.png" /></a>
-        </div>
-      </section>
-      <section id="work-here">
+
+          <div class="pagination">
+            <div class="pagination-btn">
+              <a href="">
+                <i class="fas fa-arrow-left"></i>
+                <p>Old Post</p>
+              </a>
+            </div>
+            <div class="pagination-btn">
+              <a href="">
+                <p>New Post</p>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="work-here wrapper">
         <div class="text">
-          <h3>Interested in working with us?</h3>
+          <h3>Interested in working with our team?</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -257,22 +329,28 @@
         <button>
           <a href="">Let's Talk</a>
         </button>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-item ">
-        <a href=""><img src="" alt="">
-          <img src="./images/logo-footer.png" alt="">
-        </a>
-        <ul>
-          <li>
-            <div><span>A.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-            <a href="tel:+62-812-7313-4321"><span>T.</span>+62-812-7313-4321</a>
-            <a href="mailto:hello.afrian@gmail.com"><span>E.</span>hello.afrian@gmail.com</a>
-          </li>
-        </ul>
       </div>
-      <div class="footer-item">
+      <div class="ftr-line"></div>
+      <div class="links wrapper">
+        <div class="footer-logo">
+          <a href="">
+            <img src="./images/logo-footer.svg" alt="" />
+          </a>
+          <ul>
+            <li>
+              <div>
+                <span>A.</span><p>Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit.</p>
+              </div>
+              <a href="tel:+62-812-7313-4321">
+                <span>T.</span><p>+62-812-7313-4321</p></a
+              >
+              <a href="mailto:hello.afrian@gmail.com"
+                ><span>E.</span><p>hello.afrian@gmail.com</p></a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="footer-nav">
           <h2>About Us</h2>
           <nav>
@@ -285,18 +363,21 @@
           </nav>
         </div>
         <div class="footer-social">
+          <h2>Follow Us</h2>
+          <nav>
             <ul>
-              <li><a href=""></a>Instagram</li>
-              <li><a href=""></a>Facebook</li>
-              <li><a href=""></a>LinkedIn</li>
-              <li><a href=""></a>YouTube</li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">LinkedIn</a></li>
+              <li><a href="">YouTube</a></li>
             </ul>
+          </nav>
         </div>
       </div>
-      <div class="rights">
-        <span>
-            Afrianska. All Rights Reserved
-        </span>
+      <div class="rights wrapper">
+        <p>
+          2019 © Afrianska. All rights reserved.
+        </p>
       </div>
     </footer>
   </body>
